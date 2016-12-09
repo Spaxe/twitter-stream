@@ -7,7 +7,6 @@
 // Example:
 //   $ npm start cat
 //
-var _ = require('lodash');
 var request = require('request');
 var Twitter = require('twitter');
 var express = require('express');
