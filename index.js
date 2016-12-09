@@ -52,7 +52,8 @@ twitter_stream(config, search_phrase).catch(console.error);
 
 // Respond with the stored tweets, and clear cache
 app.get('/', function (req, res) {
-  res.send(JSON.stringify(cache))
+  res.setHeader('Content-Type', 'application/json');
+  res.send(JSON.stringify(cache));
   cache = [];
 });
 
